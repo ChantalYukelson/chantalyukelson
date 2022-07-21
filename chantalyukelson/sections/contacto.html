@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+	<link rel="stylesheet" href="../css/style.css">
+	<link rel="icon" type="image/x-icon" href="../multimedia/images/favicon.png">
+</head>
+<body>
+	<div class="grillaContacto">
+	<header>
+		<h2>CONTACTO</h2></header>
+		<nav class="barranav">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="carrito.html">Carrito</a></li>
+                <li><a href="#pie">Pie de pagina</a></li>
+            </ul>
+        </nav>
+	</div>
+	<main>
+	<section>
+		<article>
+			<form action="#" class="formulario">
+				<label for="nombre_apellido">Nombre y Apellido</label>
+                <input type="text" name="nombre_apellido"><br>
+                <label for="edad">Edad</label>
+                <input type="number" name="edad"> <br>
+                <div>Sexo
+					<div>Hombre
+						<input type="radio" name="sexo" value="Hombre">
+					</div>
+					<div>Mujer
+						<input type="radio" name="sexo" value="Mujer">
+					</div>
+                </div>
+				<label for="email"> Mail
+					<input type="email" placeholder="aaa@gmail.com" name="email"><br>
+				</label>
+				<label for="Comentarios"> Comentarios<br>
+					<textarea placeholder="Comentarios"></textarea>
+				</label> <br>
+                <label for="Dudas"> Dudas<br>
+					<textarea placeholder="Dudas"></textarea>
+				</label> <br>
+				
+				
+				<p>Como conociste nuestra marca?</p>
+				<select name="conociste" id="text"> 
+					<option value="calle">Fui a local</option>
+					<option value="recomendacion">Me lo recomendaron</option>
+					<option value="pagina">Encontre la pagina web</option>
+                </select>
+				<div>Queres recibir info sobre nosotros?
+				<input type="checkbox" name="acepta" value="1"></div>
+				<section class="botones">
+					<input type="submit" value="Enviar">
+					<input type="reset" value="Resetear">
+				</section>
+				
+			</form>
+		</article>
+	</section>
+	</main>	
+	
+</body>
+</html>

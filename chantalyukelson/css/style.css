@@ -1,0 +1,188 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*mobile first*/
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+h2{
+    text-align: center;
+}
+.barranav{
+    list-style: none;
+	font-size: 20px;
+	font-weight: bold;
+	font-style:black;
+	text-align: center;
+    grid-area: nav;
+}
+
+.barranav li {
+    list-style-type: none;
+    text-decoration: none;
+    display: inline-flex;
+    color: white;
+    background-color: black;
+}
+
+.barranav:hover{
+    transform: scale(2);
+    transition: all 2s;
+}
+
+header{
+    background-color: grey;
+    text-align: center;
+    font-weight: bold;
+    font-size: 50px;
+    border: 5px black solid;
+    display: grid;
+    justify-content: center;
+    grid-area: header;
+}
+main{
+    background-color: lightgray;
+    grid-area: main;
+}
+.titulo{
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Abril Fatface';
+    font-size: 50px;
+    border: 5px black solid;
+}
+
+.cartel{
+    width: 100%;
+    display: grid;
+    justify-content: center;
+}
+
+p {
+    font-size: 30px;
+    color: black;
+    border: 5px black solid;
+    text-align: center;
+    margin-bottom: 1px;
+}
+
+footer{
+    background-color: grey;
+    font-size: 30px;
+    grid-area: footer;
+    margin-bottom: 0px;
+    width: 1000px;
+    text-align: center;
+ }
+
+ .formulario{
+     padding-left: 10px;
+     font-size: 20px;
+     text-align: justify;
+ }
+
+.grillaGeneral {
+    grid-template-columns: repeat(2, 1fr);
+    background-color: lightgray;
+    display: grid;
+    grid-template-areas: 
+    "nav nav"
+    "header header"
+    "main main"
+    "footer footer"
+;
+}
+
+.grillaCarrito {
+    grid-template-columns: repeat(3, 1fr);
+    background-color: lightgray;
+    display: grid;
+    grid-template-areas: 
+    "nav nav nav"
+    "header header header"
+;
+}
+.grillaProductos {
+    grid-template-columns: repeat(3, 1fr);
+    background-color: lightgray;
+    display: grid;
+    grid-template-areas: 
+    "nav nav nav"
+    "header header header"
+    "productos productos productos"
+;
+}
+.productos{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) ;
+    gap: 5px;
+    width: 1000px;
+    grid-template-areas: 
+    "camisa traje zapatos";
+}
+.grillaNosotros {
+    grid-template-columns: repeat(3, 1fr);
+    background-color: lightgray;
+    display: grid;
+    grid-template-areas: 
+    "nav nav nav"
+    "header header header"
+;
+}
+.grillaContacto {
+    grid-template-columns: repeat(3, 1fr);
+    background-color: lightgray;
+    display: grid;
+    grid-template-areas: 
+    "nav nav nav"
+    "header header header"
+;
+}
+/* lo adapto a los tamaños*/
+
+@media screen and (max-width: 500px){
+
+    .grillaGeneral {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: 
+        "header header"
+        "titulo titulo"
+        "main  main"
+        "footer footer"
+        ;
+    }
+    
+.barranav ul {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.cartel{
+    justify-content: center;
+}
+
+}
+
+
+@media screen and (max-width: 500px){
+
+    .grillaGeneral {
+        display: grid;
+        margin-bottom: 1,5em;
+        grid-template-columns: 3fr;
+        gap: 2px;
+        grid-template-areas: 
+        "header header"
+        "nav nav"
+        "main main"
+        "footer footer"
+        ;
+    }
+}
