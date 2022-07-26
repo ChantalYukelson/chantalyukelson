@@ -15,10 +15,11 @@ h2{
     text-align: center;
 }
 .barranav{
+    background-image: linear-gradient (to left, grey, white);
     list-style: none;
 	font-size: 20px;
 	font-weight: bold;
-	font-style:black;
+	font-style:white;
 	text-align: center;
     grid-area: nav;
 }
@@ -37,7 +38,6 @@ h2{
 }
 
 header{
-    background-image: linear-gradient (left,grey,white);
     text-align: center;
     font-weight: bold;
     font-size: 50px;
