@@ -6,35 +6,8 @@
 
 /*mobile first*/
 
-body{
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
 h2{
     text-align: center;
-}
-.barranav{
-    background-image: linear-gradient (to left, grey, white);
-    list-style: none;
-	font-size: 20px;
-	font-weight: bold;
-	font-style:white;
-	text-align: center;
-    grid-area: nav;
-}
-
-.barranav li {
-    list-style-type: none;
-    text-decoration: none;
-    display: inline-flex;
-    color: white;
-    background-color: black;
-}
-
-.barranav:hover{
-    transform: scale(2);
-    transition: all 2s;
 }
 
 header{
@@ -54,6 +27,12 @@ main{
     text-align: center;
     font-weight: bold;
     font-family: 'Abril Fatface';
+    font-size: 50px;
+    border: 5px black solid;
+    background-image: linear-gradient (to left, grey, white);
+}
+.title{
+    text-align: center;
     font-size: 50px;
     border: 5px black solid;
 }
@@ -80,6 +59,7 @@ footer{
     width: 1000px;
     text-align: center;
  }
+ 
 
  .formulario{
      padding-left: 10px;
@@ -113,7 +93,6 @@ footer{
     background-color: lightgray;
     display: grid;
     grid-template-areas: 
-    "nav nav nav"
     "header header header"
     "productos productos productos"
 ;
@@ -159,16 +138,11 @@ footer{
         ;
     }
     
-.barranav ul {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 .cartel{
     justify-content: center;
 }
 
-}
 
 
 @media screen and (max-width: 500px){
