@@ -94,16 +94,7 @@ footer{
     display: grid;
     grid-template-areas: 
     "header header header"
-    "productos productos productos"
 ;
-}
-.productos{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr) ;
-    gap: 5px;
-    width: 1000px;
-    grid-template-areas: 
-    "camisa traje zapatos";
 }
 .grillaNosotros {
     grid-template-columns: repeat(3, 1fr);
