@@ -12,12 +12,12 @@ h2{
 
 header{
     text-align: center;
-    font-weight: bold;
     font-size: 50px;
     border: 5px black solid;
     display: grid;
     justify-content: center;
     grid-area: header;
+    background-color: black;
 }
 main{
     background-color: lightgray;
@@ -25,7 +25,6 @@ main{
 }
 .titulo{
     text-align: center;
-    font-weight: bold;
     font-family: 'Abril Fatface';
     font-size: 50px;
     border: 5px black solid;
@@ -35,6 +34,7 @@ main{
     text-align: center;
     font-size: 50px;
     border: 5px black solid;
+    color: white;
 }
 
 .cartel{
