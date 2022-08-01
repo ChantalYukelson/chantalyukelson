@@ -188,11 +188,25 @@ footer{
     background-color: grey;
     font-size: 30px;
     grid-area: footer;
-    margin-bottom: 0px;
     text-align: center;
     background-image: linear-gradient(lightgray, black);
     color: white;
  }
+
+ .redes {
+    border: 5px white solid;
+ }
+
+ #pie .btn-contacto {
+    border: 2px solid #fff;
+    color: #fff;
+  }
+  
+  #pie .btn-contacto:hover {
+    background: grey;
+    border: 2px solid #fff;
+    color: #fff;
+  }
  
 
  .formulario{
