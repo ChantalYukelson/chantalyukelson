@@ -215,6 +215,14 @@ footer{
      text-align: justify;
  }
 
+ #about .about-img img {
+  max-width: 100%;
+  margin: 2px;
+}
+.nosotros-text{
+  margin: 20px;
+
+}
 /*Aplico grid*/
 
 .grillaGeneral {
@@ -354,6 +362,7 @@ footer{
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  background-color: lightgray;
 }
 @media screen and (min-width: 690px) {
   .tienda {
